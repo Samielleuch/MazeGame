@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Solve Me!</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="canvascard">
+    <div class="welcome">
+        <div class="jumbotron">
+            <h1 class="display-4">Solve The Maze To acces the Page !</h1>
+            <hr>
+            <p class="lead">This is a simple Game , all you have to do is reach the goal , you will be forwarded to the
+                page Upon completion.</p>
+            <p class="lead">You can either use the arrow keys to move</p>
+            <img class="controls" src="./img/Controls.png" alt="can't load">
+            <p class="lead">or if you're on a touch screen device just swipe to the wanted direction and we reccomend
+                you use Landscape mode</p>
+            <p class="lead">Press the Start button to generate the maze and start the game </p>
+            <hr class="my-4">
+            <div class="input-group">
+                <div class="input-group">
+                    <label class=" btn btn-outline-info btn-lg" for="inputGroupSelect02">Difficulty</label>
+                </div>
+                <br>
+                <select class="custom-select" id="inputGroupSelect02">
+                    <option value=100 selected>Easy</option>
+                    <option value=80>Medium</option>
+                    <option value=50>Hard</option>
+                    <option value=40>Extreme</option>
+                </select>
+            </div>
+            <hr>
+            <button type="button" class="btn btn-outline-info btn-lg , start">START</button>
+        </div>
+    </div>
+    <div class="jumbotron Win">
+        <h1 class="display-4">GOOD JOB :D </h1>
+        <hr>
+        <p class="lead">Page Loading </p>
+        <div class="spinner-border text-info" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+    </div>
+
+    <canvas id="mazeCanvas" height="800" width="800">Can't load the maze game, because your browser doesn't
+        support HTML5.
+    </canvas>
+
+</div>
+
+
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,78 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+
+    /* This centers our sketch vertically. */
+    align-items: center;
+    background: url("./img/background.jpg")  center 50%;
+
+}
+canvas {
+    padding: 0;
+}
+.canvascard {    position: relative;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.canvascard::before {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -2;
+}
+.canvascard::after {
+
+    content: '';
+    display: inline-block;
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -2;
+    filter: blur(40px);
+}
+.canvascard::before ,
+.canvascard::after {
+    background: linear-gradient(235deg,#1438A6,#BF1736,#1438A6);
+}
+ .jumbotron {
+  background: #0D1440 !important;
+     text-align: center;
+     align-items: center;
+
+ }
+    .input-group {
+         width: 100px !important;
+         display: inline-flex;
+
+  }
+
+
+
+@media (max-width: 768px)and (orientation: Portrait) {
+    html {font-size:  calc(0.65em + 0.3vw) }
+    .controls {
+        width:  calc(15em + 12vw) ;
+    }
+}
+@media (max-width: 1024px)and (orientation: Landscape) {
+    html {font-size:  calc(0.4em + 0.3vw) }
+    .controls {
+        width:  calc(10em + 10vw) ;
+    }
+}
