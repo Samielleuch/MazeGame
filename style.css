@@ -1,7 +1,7 @@
-
 html, body {
     height: 100%;
 }
+
 
 body {
     margin: 0;
@@ -57,22 +57,50 @@ canvas {
 
  }
     .input-group {
-         width: 100px !important;
+
+        box-sizing:content-box !important;
+         width:70px !important;
          display: inline-flex;
 
   }
+    .input-group .lbl {
+        display: block!important;
+        width: 100% !important;
+    }
+    .input-group #inputGroupSelect02 {
+        display: block !important;
+        width: 100% !important;
+    }
+
+
+body { overscroll-behavior: none }
 
 
 
 @media (max-width: 768px)and (orientation: Portrait) {
     html {font-size:  calc(0.65em + 0.3vw) }
-    .controls {
-        width:  calc(15em + 12vw) ;
+
+    .display-4{
+        font-size: 20px;
     }
+    .controls {
+    width:  calc(15em + 12vw) ;
+}
 }
 @media (max-width: 1024px)and (orientation: Landscape) {
     html {font-size:  calc(0.4em + 0.3vw) }
     .controls {
         width:  calc(10em + 10vw) ;
+    }
+    .display-4{
+        font-size: 35px;
+    }
+    .wlcm{
+        margin-top: 75px;
+    }
+    .input-group {
+
+        width:90px !important;
+
     }
 }
