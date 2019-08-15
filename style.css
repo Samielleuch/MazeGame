@@ -59,7 +59,7 @@ canvas {
     .input-group {
 
         box-sizing:content-box !important;
-         width:70px !important;
+         width:100px !important;
          display: inline-flex;
 
   }
